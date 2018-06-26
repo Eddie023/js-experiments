@@ -1,0 +1,31 @@
+
+*{
+  padding: 0px;
+  margin: 0px;
+}
+.image-wrapper{
+  height: 400px;
+  width: 800px;
+  overflow: hidden;
+}
+
+.image-container{
+  height: 400px;
+  width: 8000px;
+}
+
+.image-container li img{
+  height: 400px;
+  width: 800px;
+}
+
+.image-container li{
+  width: 800px;
+  float: left;
+}
+
+/* .image-container{
+   height:400px;
+   width:800px;
+
+} */
