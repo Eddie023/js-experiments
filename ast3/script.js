@@ -1,5 +1,5 @@
-var button = document.getElementById('button');
-var button2 = document.getElementById('button2');
+var button = document.getElementsByClassName('button')[0];
+var button2 = document.getElementsByClassName('button')[1];
 var imgContainer = document.getElementsByClassName('image-container')[0];
 var img = document.getElementsByTagName('img');
 
@@ -16,26 +16,24 @@ var img = document.getElementsByTagName('img');
 
 
 console.log(img);
-var marginValue= -50;
+var marginValue= 0;
 var imageWidth = 800;
+var marginLeftMaxWidth = 4000;
+//var counter = 1;
 
   button.addEventListener('click',function(){
       
     var counterRef =   setInterval(function(){
         
+        marginValue = marginValue -50; 
+        imgContainer.style.marginLeft = marginValue + 'px';    
         
         if(marginValue % -800 === 0){
-            clearInterval(counterRef);
+           clearInterval(counterRef);
+            
         }
-         imgContainer.style.marginLeft = marginValue + 'px';
-          marginValue = marginValue - 50;
-              
+       
           
-          
-//          if(marginValue == -800){
-//              break;
-//          }
-//          
       },100)
       
                    
@@ -43,22 +41,16 @@ var imageWidth = 800;
 
 button2.addEventListener('click',function(){
       
-    var counterRef =  setInterval(function(){
-        console.log(marginValue);
-        if(marginValue % -800 === 0){
-            clearInterval(counterRef);
-            console.log('this called');
-        }
+    var counterReference =  setInterval(function(){
+        
+         marginValue = marginValue + 50;
          imgContainer.style.marginLeft = marginValue + 'px';
-          marginValue = marginValue + 50;
-              
-          
-          
-//          if(marginValue == -800){
-//              break;
-//          }
-//          
-      },100)
+        
+          if(marginValue % -800 ===0)
+              {
+                  clearInterval(counterReference);
+              }
+          },100)
       
                    
-  })
+  });
