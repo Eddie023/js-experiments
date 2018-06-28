@@ -1,0 +1,16 @@
+#environment {
+    height: 500px;
+    width: 500px;
+    background: blue;
+    position: relative;
+}
+
+
+
+.aPoint{
+    height: 30px;
+    width: 30px;
+    position:absolute;
+    background: yellow;
+    border-radius: 5px;
+}
