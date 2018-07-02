@@ -92,7 +92,7 @@ function gameOverImage() {
 
   $gameOverImg.style.visibility = 'visible';
   $scoreMenu.style.marginLeft = "100px";
-  $scoreMenu.style.fontSize = "160px";
+  $scoreMenu.style.fontSize = "100px";
   $scoreMenu.style.width = "200px";
   $scoreMenu.style.height = "200px";
   $scoreMenu.style.backgroundColor = 'transparent';
