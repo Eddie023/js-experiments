@@ -1,0 +1,96 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.image-wrapper {
+  height: 432px;
+  width: 768px;
+  position: relative;
+  top: 20%;
+  left: 20%;
+  overflow: hidden;
+}
+
+img {
+  float: left;
+}
+
+.image-slider {
+  width: 2304px;
+  height: 432px;
+  /* position: relative; */
+}
+
+.avatar-wrapper {
+  /* height: 432px; */
+  /* width: 768px; */
+  top: 15%;
+  left: 3%;
+  background: 'red';
+}
+
+.avatar {
+  position: absolute;
+  z-index: 2;
+  background-image: url(./images/avatar.png);
+}
+
+.enemy {
+  position: absolute;
+  background-image: url(./images/alien2.gif);
+}
+
+.ninjaBlade {
+  position: absolute;
+  /* background-image: url(./images/ninjablade.png); */
+}
+
+#game-menu-bg {
+  position: absolute;
+  /* background-color: lightblue; */
+  background-image: url(./images/ninjabg.jpg);
+  background-size: cover;
+  height: 432px;
+  width: 768px;
+  z-index: 10;
+}
+
+#button {
+  cursor: pointer;
+  font-size: 16px;
+  color: red;
+  width: 200px;
+  height: 200px;
+  margin-left: 500px;
+  border-radius: 45%;
+  border: none;
+  background-color: transparent;
+  background-image: url(./images/start.png);
+  background-size: cover;
+}
+
+h1 {
+  margin-left: 400px;
+  font-family: monospace;
+  color: blue;
+  font-size: 50px;
+}
+
+#game-over {
+  position: absolute;
+  opacity: 0.7;
+  visibility: hidden;
+  z-index: 20;
+}
+
+#score-menu {
+  color: white;
+  width: 100px;
+  text-align: center;
+  background: black;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 600px;
+  z-index: 9;
+}
